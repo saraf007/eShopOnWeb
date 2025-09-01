@@ -54,10 +54,10 @@ builder.Services.AddSwagger();
 builder.Services.AddMetronome();
 string seqUrl = builder.Configuration["Seq:ServerUrl"] ?? "http://localhost:5341";
 
-builder.AddSeqEndpoint(connectionName: "seq", options =>
-{
-    options.ServerUrl = seqUrl;
-});
+//builder.AddSeqEndpoint(connectionName: "seq", options =>
+//{
+//    options.ServerUrl = seqUrl;
+//});
 
 var app = builder.Build();
 
